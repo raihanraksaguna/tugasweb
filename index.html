@@ -1,0 +1,77 @@
+<html>
+<title>TUGAS ANIMATE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+	
+<body>
+	<style>
+		body {
+		  background-color: purple;
+		}
+		</style>
+	
+<center>
+<div class="w3-container">
+<img src="pemilu.jpeg" width="100%" height="40%">
+</div>
+<div class="w3-bar w3-white">
+ <button class="w3-bar-item w3-button" onclick="openKota('Awal')">HOME</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Atas')">CAPRES 1</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Bawah')">CAPRES 2</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kiri')">CAPRES 3</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kanan')">CAPRES 4</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Tengah')">PROFILE</button>
+
+ </div>
+ </div>
+ 
+<div id="Awal" class="w3-container kota w3-animate-zoom" style="display:none">
+	<font color="white"> <h2>PEMILU 2024</h2>
+ <p>Disini saya akan memperkenalkan Capres dan Cawapres pemilu 2024</p>
+ <br>
+ <img src="home.jpeg" width="300">
+ </div>
+<div id="Atas" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>CAPRES DAN CAWAPRES NO 1</h2>
+ <br>
+ <img src="capres1.jpeg" width="300">
+ </div>
+<div id="Bawah" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>CAPRES DAN CAWAPRES NO 2</h2>
+ <br>
+ <img src="capres2.jpeg" width="500">
+ </div>
+<div id="Kiri" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>CAPRES DAN CAWAPRES NO 3</h2>
+ <br>
+ <img src="capres3.jpeg" width="500">
+</div>
+<div id="Kanan" class="w3-container kota w3-spin" style="display:none">
+ <h2>CAPRES DAN CAWAPRES NO 4</h2>
+ EPUL DAN KHANG ADIT
+ <br>
+ <img src="capres4.jpg" width="300">
+</div>
+<div id="Tengah" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>PROFILE SAYA</h2>
+ <p>Perkenalkan nama saya RAIHAN RAKSAGUNA. Saya lahir di kota Cirebon pada tanggal 20 Oktober 2005.
+ Saya tinggal di kota Bandung. Hobby saya bermain sepak bola. Dan saya adalah mahasiswa di Universitas Komputer Indonesia
+ jurusan Teknik Informatika.</p>
+ <br>
+ <img src="epul.jpg" width="300">
+ <p>NAMA  : RAIHAN RAKSAGUNA</p>
+ <p>NIM   : 10123107</p>
+ <p>KELAS : IF-3</p>
+</div>
+<script>
+function openKota(namakota) {
+ var i; 
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html
